@@ -15,6 +15,10 @@
 		4A7FA2AB250BB6F700EE5E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7FA2A9250BB6F700EE5E09 /* LaunchScreen.storyboard */; };
 		4A7FA2B6250BB7C600EE5E09 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA2B5250BB7C600EE5E09 /* URL+Extensions.swift */; };
 		4A7FA2B8250BB7F000EE5E09 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA2B7250BB7F000EE5E09 /* CameraController.swift */; };
+		4A7FA2BB250BBCEB00EE5E09 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7FA2BA250BBCEB00EE5E09 /* Camera.storyboard */; };
+		4A7FA2BD250BBCFB00EE5E09 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA2BC250BBCFB00EE5E09 /* CameraViewController.swift */; };
+		4A7FA2C0250BC6B600EE5E09 /* Display.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7FA2BF250BC6B600EE5E09 /* Display.storyboard */; };
+		4A7FA2C2250BC6C100EE5E09 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA2C1250BC6C100EE5E09 /* DisplayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		4A7FA2AC250BB6F700EE5E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A7FA2B5250BB7C600EE5E09 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		4A7FA2B7250BB7F000EE5E09 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		4A7FA2BA250BBCEB00EE5E09 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		4A7FA2BC250BBCFB00EE5E09 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4A7FA2BF250BC6B600EE5E09 /* Display.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Display.storyboard; sourceTree = "<group>"; };
+		4A7FA2C1250BC6C100EE5E09 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,8 @@
 		4A7FA2B3250BB79A00EE5E09 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4A7FA2BE250BC6A800EE5E09 /* Camera Display */,
+				4A7FA2B9250BBCCB00EE5E09 /* Camera */,
 				4A7FA2A2250BB6F400EE5E09 /* ViewController.swift */,
 				4A7FA2A4250BB6F400EE5E09 /* Main.storyboard */,
 			);
@@ -95,6 +105,24 @@
 				4A7FA2B5250BB7C600EE5E09 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A7FA2B9250BBCCB00EE5E09 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4A7FA2BA250BBCEB00EE5E09 /* Camera.storyboard */,
+				4A7FA2BC250BBCFB00EE5E09 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		4A7FA2BE250BC6A800EE5E09 /* Camera Display */ = {
+			isa = PBXGroup;
+			children = (
+				4A7FA2BF250BC6B600EE5E09 /* Display.storyboard */,
+				4A7FA2C1250BC6C100EE5E09 /* DisplayViewController.swift */,
+			);
+			path = "Camera Display";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7FA2C0250BC6B600EE5E09 /* Display.storyboard in Resources */,
 				4A7FA2AB250BB6F700EE5E09 /* LaunchScreen.storyboard in Resources */,
+				4A7FA2BB250BBCEB00EE5E09 /* Camera.storyboard in Resources */,
 				4A7FA2A8250BB6F700EE5E09 /* Assets.xcassets in Resources */,
 				4A7FA2A6250BB6F400EE5E09 /* Main.storyboard in Resources */,
 			);
@@ -169,10 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7FA2A3250BB6F400EE5E09 /* ViewController.swift in Sources */,
+				4A7FA2C2250BC6C100EE5E09 /* DisplayViewController.swift in Sources */,
 				4A7FA2B6250BB7C600EE5E09 /* URL+Extensions.swift in Sources */,
 				4A7FA29F250BB6F400EE5E09 /* AppDelegate.swift in Sources */,
 				4A7FA2A1250BB6F400EE5E09 /* SceneDelegate.swift in Sources */,
 				4A7FA2B8250BB7F000EE5E09 /* CameraController.swift in Sources */,
+				4A7FA2BD250BBCFB00EE5E09 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

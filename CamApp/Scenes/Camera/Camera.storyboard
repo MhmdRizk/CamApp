@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="BH2-Ry-w3n">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewControllerVC" id="i4D-9s-Gy3" customClass="CameraViewController" customModule="iPaparazzo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HLm-yw-Vxf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l33-uN-dLM" customClass="BaseUIView" customModule="iPaparazzo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glE-X1-dc0">
+                                <rect key="frame" x="0.0" y="98" width="414" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-CD-2kh" customClass="BaseLabel" customModule="iPaparazzo" customModuleProvider="target">
+                                        <rect key="frame" x="186" y="5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-Up-Wcc" customClass="BaseUIView" customModule="iPaparazzo" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="8" width="14" height="14"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="3XL-Me-olw"/>
+                                            <constraint firstAttribute="height" constant="14" id="baQ-Ph-Nyq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CwS-CD-2kh" firstAttribute="centerX" secondItem="glE-X1-dc0" secondAttribute="centerX" id="Ann-EJ-gJN"/>
+                                    <constraint firstItem="CwS-CD-2kh" firstAttribute="centerY" secondItem="glE-X1-dc0" secondAttribute="centerY" id="Igz-uX-fcQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="QKU-aj-ecc"/>
+                                    <constraint firstItem="CwS-CD-2kh" firstAttribute="leading" secondItem="NHO-Up-Wcc" secondAttribute="trailing" constant="4" id="eta-Ab-jBE"/>
+                                    <constraint firstItem="NHO-Up-Wcc" firstAttribute="centerY" secondItem="glE-X1-dc0" secondAttribute="centerY" id="fFm-hT-b74"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mtu-nm-MDn">
+                                <rect key="frame" x="54" y="56" width="150" height="38"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="29t-bz-sgy">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0T-cn-HGL" customClass="BaseButton" customModule="iPaparazzo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B65-Ui-XH0" customClass="BaseButton" customModule="iPaparazzo" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="50" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtU-DW-DHp" customClass="BaseButton" customModule="iPaparazzo" customModuleProvider="target">
+                                                <rect key="frame" x="100" y="0.0" width="50" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="TKF-jB-z8f"/>
+                                    <constraint firstItem="29t-bz-sgy" firstAttribute="leading" secondItem="Mtu-nm-MDn" secondAttribute="leading" id="WhG-VY-dhs"/>
+                                    <constraint firstAttribute="bottom" secondItem="29t-bz-sgy" secondAttribute="bottom" id="ezA-Df-dCt"/>
+                                    <constraint firstAttribute="trailing" secondItem="29t-bz-sgy" secondAttribute="trailing" id="fE8-ma-IJI"/>
+                                    <constraint firstAttribute="width" constant="150" id="kJ9-3R-R8f"/>
+                                    <constraint firstItem="29t-bz-sgy" firstAttribute="top" secondItem="Mtu-nm-MDn" secondAttribute="top" id="rVf-Es-n7z"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainRevertCamera" translatesAutoresizingMaskIntoConstraints="NO" id="gHO-Wa-LIn" customClass="BaseImageView" customModule="iPaparazzo" customModuleProvider="target">
+                                <rect key="frame" x="372" y="56" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RXZ-kM-Q1S"/>
+                                    <constraint firstAttribute="width" constant="30" id="y7p-GV-XSA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainFlash" translatesAutoresizingMaskIntoConstraints="NO" id="b9G-eh-QXC" customClass="BaseImageView" customModule="iPaparazzo" customModuleProvider="target">
+                                <rect key="frame" x="12" y="56" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PP6-zY-uca"/>
+                                    <constraint firstAttribute="width" constant="30" id="R1b-C4-RJK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingCamera" translatesAutoresizingMaskIntoConstraints="NO" id="LKD-RH-4o6" customClass="BaseImageView" customModule="iPaparazzo" customModuleProvider="target">
+                                <rect key="frame" x="163.5" y="742" width="87" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="7MC-x8-KNa"/>
+                                    <constraint firstAttribute="height" constant="87" id="SoO-w8-75t"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l33-uN-dLM" firstAttribute="top" secondItem="HLm-yw-Vxf" secondAttribute="top" id="4ZG-bH-Eya"/>
+                            <constraint firstItem="RR4-cn-Rq2" firstAttribute="trailing" secondItem="gHO-Wa-LIn" secondAttribute="trailing" constant="12" id="BcU-sP-oUP"/>
+                            <constraint firstItem="b9G-eh-QXC" firstAttribute="leading" secondItem="RR4-cn-Rq2" secondAttribute="leading" constant="12" id="CAU-q6-AcG"/>
+                            <constraint firstItem="b9G-eh-QXC" firstAttribute="top" secondItem="RR4-cn-Rq2" secondAttribute="top" constant="12" id="FPb-Hd-gGb"/>
+                            <constraint firstItem="RR4-cn-Rq2" firstAttribute="trailing" secondItem="l33-uN-dLM" secondAttribute="trailing" id="FfQ-qg-6Af"/>
+                            <constraint firstItem="Mtu-nm-MDn" firstAttribute="leading" secondItem="b9G-eh-QXC" secondAttribute="trailing" constant="12" id="K3H-fW-fYD"/>
+                            <constraint firstItem="glE-X1-dc0" firstAttribute="leading" secondItem="RR4-cn-Rq2" secondAttribute="leading" id="Ll1-yt-vgs"/>
+                            <constraint firstItem="l33-uN-dLM" firstAttribute="leading" secondItem="RR4-cn-Rq2" secondAttribute="leading" id="OSJ-4u-GSc"/>
+                            <constraint firstItem="glE-X1-dc0" firstAttribute="top" secondItem="Mtu-nm-MDn" secondAttribute="bottom" constant="4" id="bO9-yJ-GyS"/>
+                            <constraint firstItem="Mtu-nm-MDn" firstAttribute="top" secondItem="RR4-cn-Rq2" secondAttribute="top" constant="12" id="cLI-pp-0W4"/>
+                            <constraint firstItem="LKD-RH-4o6" firstAttribute="centerX" secondItem="HLm-yw-Vxf" secondAttribute="centerX" id="d70-uT-SSl"/>
+                            <constraint firstItem="RR4-cn-Rq2" firstAttribute="bottom" secondItem="LKD-RH-4o6" secondAttribute="bottom" constant="33" id="k3N-Zb-2t3"/>
+                            <constraint firstItem="gHO-Wa-LIn" firstAttribute="top" secondItem="RR4-cn-Rq2" secondAttribute="top" constant="12" id="nmE-hO-9E7"/>
+                            <constraint firstItem="RR4-cn-Rq2" firstAttribute="trailing" secondItem="glE-X1-dc0" secondAttribute="trailing" id="qgs-ur-4LC"/>
+                            <constraint firstAttribute="bottom" secondItem="l33-uN-dLM" secondAttribute="bottom" id="ubQ-5t-ij4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RR4-cn-Rq2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ype-is-qWd"/>
+                    <connections>
+                        <outlet property="autoFlashButton" destination="I0T-cn-HGL" id="XBP-gO-CVT"/>
+                        <outlet property="captureImageButton" destination="LKD-RH-4o6" id="mJb-9p-2sI"/>
+                        <outlet property="capturePreviewView" destination="l33-uN-dLM" id="x2t-pb-1mo"/>
+                        <outlet property="flashButtonsContainerView" destination="Mtu-nm-MDn" id="wYk-Rl-Gdt"/>
+                        <outlet property="flashIconButton" destination="b9G-eh-QXC" id="iZJ-pZ-QZ7"/>
+                        <outlet property="offFlashButton" destination="YtU-DW-DHp" id="cac-w7-oQj"/>
+                        <outlet property="onFlashButton" destination="B65-Ui-XH0" id="JIE-3e-RNe"/>
+                        <outlet property="recordTimerLabel" destination="CwS-CD-2kh" id="hKc-nA-7yB"/>
+                        <outlet property="recordView" destination="NHO-Up-Wcc" id="Bav-27-GPU"/>
+                        <outlet property="switchPostionIcon" destination="gHO-Wa-LIn" id="O5y-aS-5RI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RA-O5-r8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247.2" y="234.97536945812809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LandingCamera" width="43.5" height="43.5"/>
+        <image name="MainFlash" width="30" height="30"/>
+        <image name="MainRevertCamera" width="30" height="30"/>
+    </resources>
+</document>
