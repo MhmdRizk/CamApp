@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ult-BS-GSe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -10,25 +10,25 @@
         <!--Camera View Controller-->
         <scene sceneID="BH2-Ry-w3n">
             <objects>
-                <viewController storyboardIdentifier="CameraViewControllerVC" id="i4D-9s-Gy3" customClass="CameraViewController" customModule="iPaparazzo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraViewControllerVC" id="i4D-9s-Gy3" customClass="CameraViewController" customModule="CamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HLm-yw-Vxf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l33-uN-dLM" customClass="BaseUIView" customModule="iPaparazzo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l33-uN-dLM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glE-X1-dc0">
-                                <rect key="frame" x="0.0" y="98" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="142" width="414" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-CD-2kh" customClass="BaseLabel" customModule="iPaparazzo" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-CD-2kh">
                                         <rect key="frame" x="186" y="5" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-Up-Wcc" customClass="BaseUIView" customModule="iPaparazzo" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-Up-Wcc">
                                         <rect key="frame" x="168" y="8" width="14" height="14"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -47,20 +47,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mtu-nm-MDn">
-                                <rect key="frame" x="54" y="56" width="150" height="38"/>
+                                <rect key="frame" x="54" y="100" width="150" height="38"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="29t-bz-sgy">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0T-cn-HGL" customClass="BaseButton" customModule="iPaparazzo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0T-cn-HGL">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="38"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B65-Ui-XH0" customClass="BaseButton" customModule="iPaparazzo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B65-Ui-XH0">
                                                 <rect key="frame" x="50" y="0.0" width="50" height="38"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtU-DW-DHp" customClass="BaseButton" customModule="iPaparazzo" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtU-DW-DHp">
                                                 <rect key="frame" x="100" y="0.0" width="50" height="38"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
@@ -77,21 +77,21 @@
                                     <constraint firstItem="29t-bz-sgy" firstAttribute="top" secondItem="Mtu-nm-MDn" secondAttribute="top" id="rVf-Es-n7z"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainRevertCamera" translatesAutoresizingMaskIntoConstraints="NO" id="gHO-Wa-LIn" customClass="BaseImageView" customModule="iPaparazzo" customModuleProvider="target">
-                                <rect key="frame" x="372" y="56" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainRevertCamera" translatesAutoresizingMaskIntoConstraints="NO" id="gHO-Wa-LIn">
+                                <rect key="frame" x="372" y="100" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="RXZ-kM-Q1S"/>
                                     <constraint firstAttribute="width" constant="30" id="y7p-GV-XSA"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainFlash" translatesAutoresizingMaskIntoConstraints="NO" id="b9G-eh-QXC" customClass="BaseImageView" customModule="iPaparazzo" customModuleProvider="target">
-                                <rect key="frame" x="12" y="56" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainFlash" translatesAutoresizingMaskIntoConstraints="NO" id="b9G-eh-QXC">
+                                <rect key="frame" x="12" y="100" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="PP6-zY-uca"/>
                                     <constraint firstAttribute="width" constant="30" id="R1b-C4-RJK"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingCamera" translatesAutoresizingMaskIntoConstraints="NO" id="LKD-RH-4o6" customClass="BaseImageView" customModule="iPaparazzo" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingCamera" translatesAutoresizingMaskIntoConstraints="NO" id="LKD-RH-4o6">
                                 <rect key="frame" x="163.5" y="742" width="87" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="7MC-x8-KNa"/>
@@ -135,7 +135,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RA-O5-r8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1247.2" y="234.97536945812809"/>
+            <point key="canvasLocation" x="2156.521739130435" y="234.375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iO4-5z-fvh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ult-BS-GSe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tNZ-cf-6pK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i4D-9s-Gy3" kind="relationship" relationship="rootViewController" id="8cQ-2Y-j6e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoZ-Yi-tHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246.376811594203" y="234.375"/>
         </scene>
     </scenes>
     <resources>

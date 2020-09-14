@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4A7FA29F250BB6F400EE5E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA29E250BB6F400EE5E09 /* AppDelegate.swift */; };
-		4A7FA2A1250BB6F400EE5E09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA2A0250BB6F400EE5E09 /* SceneDelegate.swift */; };
 		4A7FA2A3250BB6F400EE5E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA2A2250BB6F400EE5E09 /* ViewController.swift */; };
 		4A7FA2A6250BB6F400EE5E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7FA2A4250BB6F400EE5E09 /* Main.storyboard */; };
 		4A7FA2A8250BB6F700EE5E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7FA2A7250BB6F700EE5E09 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		4A7FA29B250BB6F400EE5E09 /* CamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7FA29E250BB6F400EE5E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A7FA2A0250BB6F400EE5E09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A7FA2A2250BB6F400EE5E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A7FA2A5250BB6F400EE5E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A7FA2A7250BB6F700EE5E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				4A7FA2B3250BB79A00EE5E09 /* Scenes */,
 				4A7FA2B2250BB79200EE5E09 /* Managers And Service */,
 				4A7FA29E250BB6F400EE5E09 /* AppDelegate.swift */,
-				4A7FA2A0250BB6F400EE5E09 /* SceneDelegate.swift */,
 				4A7FA2A7250BB6F700EE5E09 /* Assets.xcassets */,
 				4A7FA2A9250BB6F700EE5E09 /* LaunchScreen.storyboard */,
 				4A7FA2AC250BB6F700EE5E09 /* Info.plist */,
@@ -202,7 +199,6 @@
 				4A7FA2C2250BC6C100EE5E09 /* DisplayViewController.swift in Sources */,
 				4A7FA2B6250BB7C600EE5E09 /* URL+Extensions.swift in Sources */,
 				4A7FA29F250BB6F400EE5E09 /* AppDelegate.swift in Sources */,
-				4A7FA2A1250BB6F400EE5E09 /* SceneDelegate.swift in Sources */,
 				4A7FA2B8250BB7F000EE5E09 /* CameraController.swift in Sources */,
 				4A7FA2BD250BBCFB00EE5E09 /* CameraViewController.swift in Sources */,
 			);
@@ -349,16 +345,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 834YVXG5M3;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 924RDGY8WL;
 				INFOPLIST_FILE = CamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MHMDRIZK.CamApp;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CamApp.CamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -367,16 +366,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 834YVXG5M3;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 924RDGY8WL;
 				INFOPLIST_FILE = CamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MHMDRIZK.CamApp;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CamApp.CamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

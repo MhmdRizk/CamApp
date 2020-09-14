@@ -143,6 +143,9 @@ extension DisplayViewController{
                                             nil,
                                             nil,
                                             nil)
+        DispatchQueue.main.async {
+            self.dismiss(animated: true)
+        }
     }
     
     @objc func savePhoto(){
@@ -158,12 +161,17 @@ extension DisplayViewController{
             }
             guard success else { return }
             print("Photo saved to your library")
-            self.dismiss(animated: true)
+            DispatchQueue.main.async {
+                self.dismiss(animated: true)
+            }
+            
         }
     }
     
     @objc func discardPhoto(){
-        self.dismiss(animated: true)
+        DispatchQueue.main.async {
+            self.dismiss(animated: true)
+        }
     }
     
 }

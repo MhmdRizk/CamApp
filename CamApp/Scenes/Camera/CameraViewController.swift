@@ -33,7 +33,7 @@ class CameraViewController: UIViewController {
             autoFlashButton.setTitleColor(.black, for: .normal)
             autoFlashButton.backgroundColor = .clear
             autoFlashButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13.0)
-            onFlashButton.addTarget(self, action: #selector(self.autoFlashIconTapped), for: .touchUpInside)
+            autoFlashButton.addTarget(self, action: #selector(self.autoFlashIconTapped), for: .touchUpInside)
             
         }
     }
@@ -305,11 +305,21 @@ extension CameraViewController{
 extension CameraViewController {
     
     fileprivate func displayCapturedImage(_ imageData : Data){
-//        let vc = UIStoryboard
+        let vc = UIStoryboard(name: "Display", bundle: nil).instantiateViewController(withIdentifier: "CameraDisplayViewControllerNavVC") as! UINavigationController
+        vc.modalPresentationStyle = .fullScreen
+        (vc.viewControllers.first as! DisplayViewController).imageData = imageData
+        DispatchQueue.main.async {
+            self.navigationController?.present(vc, animated: true)
+        }
     }
     
     fileprivate func displayRecordedVideo(_ videoURL : URL){
-        
+        let vc = UIStoryboard(name: "Display", bundle: nil).instantiateViewController(withIdentifier: "CameraDisplayViewControllerNavVC") as! UINavigationController
+        vc.modalPresentationStyle = .fullScreen
+        (vc.viewControllers.first as! DisplayViewController).videoURL = videoURL
+        DispatchQueue.main.async {
+            self.navigationController?.present(vc, animated: true)
+        }
     }
     
 }
